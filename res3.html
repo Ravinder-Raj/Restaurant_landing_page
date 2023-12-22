@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRAJ Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&family=Oswald:wght@300&family=Source+Code+Pro&display=swap"    rel="stylesheet">
+</head>
+<style>
+
+ body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    -105deg,red,yellow);
+}
+.nav-item{
+    margin: 0 3rem;
+  
+}
+.nav-item:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.seta{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.sett{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.container{
+  padding: 23px;
+}
+/* website name */
+
+#name {
+  display: flex;
+  color: black;
+  margin-top: -2rem;
+  margin-left: 3rem;
+}
+
+/* NAVBAR */
+
+
+.cards{
+  display: grid;
+  grid-template-areas:"img1 img1 img1 card1 card1"
+  "img1 img1 img1 card2 card2";
+  grid-gap: 1rem;
+  padding: 10px;
+}
+
+
+#img1{
+  grid-area: img1;
+}
+#card1{
+  grid-area: card1;
+  margin-left: -10rem;
+}
+#card2{
+  grid-area: card2;
+  margin-left: -10rem;
+}
+.click{
+  overflow: auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+.pricebg{
+  border: 2px solid;
+  background-color:#FFDB6A;
+  border-radius: 10px;
+  text-align: center;
+}
+.title {
+  margin-top: -13rem;
+  margin-left: 1rem;
+}
+.title h1{
+  border:2px solid;
+  background-color: #FFDB6A;
+  text-align: center;
+}
+.title h2{
+  border:2px solid;
+  background-color: #FFDB6A;
+  text-align: center;
+}
+/* icons */
+.icons{
+  display: grid;
+  grid-template-areas:"icon1 icon2 icon3 icon4";
+  grid-gap: 2rem;
+  margin-top: -1rem;
+}
+#icon1{
+  grid-area: icon1;
+}
+#icon2{
+  grid-area: icon2;
+}
+#icon3{
+  grid-area: icon3;
+}
+#icon4{
+  grid-area: icon4;
+}
+
+.iconset{
+  border: 2px solid;
+  background-color: white;
+  text-align: center;
+}
+
+.seticon{
+  color: black;
+  font-size: 44px;
+}
+
+/* last section */
+#png{
+  display: flex;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+#png .setpng {
+  margin-left: 2rem;
+  margin-top: 11rem;
+}
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 39rem;
+  margin-top: -11rem;
+  position: absolute;
+  background-color:#FFDB6A;
+}
+
+/* last sectio photo gallery */
+.instasec{
+  display: flex;
+}
+
+
+.instasec h2 {
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+/* instagram section */
+/* .gallery{
+  display: grid;
+  grid-gap:10px;
+  grid-template-areas: "pic1 pic2 pic3 pic4 pic5"
+                        "pic6 pic7 pic8 pic9 pic10";
+} */
+.gallery{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-around ;
+}
+.gallery img {
+    width: 231px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.setpic{
+  margin-right: 8px;
+}
+/* #pic1{
+  grid-area: pic1;
+}
+
+#pic2{
+  grid-area: pic2;
+}
+
+#pic3{
+  grid-area: pic3;
+}
+
+#pic4{
+  grid-area: pic4;
+}
+
+#pic5{
+  grid-area: pic5;
+}
+#pic6{
+  grid-area: pic6;
+}
+#pic7{
+  grid-area: pic7;
+}
+#pic8{
+  grid-area: pic8;
+}
+#pic9{
+  grid-area: pic9;
+}
+#pic10{
+  grid-area: pic10;
+} */
+
+/* line */
+#line{
+  border: 2px solid black;
+  background-color: black;
+  padding: 0px;
+}
+
+/* footer */
+footer{
+  display: flex;
+  height: 30%;
+}
+
+
+
+
+/* 
+.hide{
+  display: none;
+} */
+
+
+/* media querries*/
+
+@media screen and (max-width: 1326px){
+
+  #setimg{
+    width: 50rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+  }
+  /* .setpic{
+    margin-right: 5px;
+  } */
+  .gallery img{
+    width: 231px;
+  }
+  .hide{
+    display: contents;
+  }
+ 
+}
+
+
+
+@media screen and (max-width: 1236px){
+
+  #setimg{
+    width: 45rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+  }
+  .setpic{
+    margin-right: 5px;
+  }
+  .gallery img{
+    width: 200px;
+  }
+ 
+}
+
+@media screen and (max-width: 1143px){
+
+  #setimg{
+    width: 42rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .setpic{
+    margin-right: 10px;
+  }
+  .gallery img{
+    width: 180px;
+  }
+
+
+
+
+
+
+
+
+ }
+
+
+
+    
+
+
+@media screen and (max-width: 1072px){
+
+
+  
+
+  #setimg{
+    width: 35rem;
+  }
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+  }
+  .setpic{
+    margin-right: 9px;
+  }
+  .gallery img{
+    width: 200px;
+  }
+ 
+}
+
+
+
+
+@media screen and (max-width: 910px){
+
+  #setimg{
+    width: 30rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 7rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 300px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 888px){
+
+  #setimg{
+    width: 30rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 7rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 300px;
+  }
+
+
+
+  #btn {
+    border: 2px solid;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 29rem;
+    margin-top: -9rem;
+    position: absolute;
+    background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 834px){
+
+  #setimg{
+    width: 28rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 7rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 250px;
+  }
+
+
+}
+
+@media screen and (max-width: 800px){
+
+  #setimg{
+    width: 26rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 250px;
+  }
+
+  ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+}
+
+@media screen and (max-width: 760px){
+
+  #setimg{
+    width: 30rem;
+    height: 18rem;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 250px;
+  }
+
+  #card1 {
+    margin-left: -5rem;
+}
+  #card2 {
+  margin-left: -5rem;
+}
+
+
+}
+
+
+@media screen and (max-width: 695px){
+
+  #setimg{
+    width: 28rem;
+    height: 19rem;
+  }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 250px;
+  }
+
+
+  #card1 {
+    margin-left: -5rem;
+}
+  #card2 {
+  margin-left: -5rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 5rem;
+  margin-top: -2rem;
+  position: absolute;
+  background-color: #FFDB6A;
+}
+#png .setpng {
+  margin-left: -35rem;
+  margin-top: 25rem;
+}
+
+}
+
+@media screen and (max-width: 666px){
+
+  #setimg{
+    width: 24rem;
+    height: 19rem;
+  }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 250px;
+  }
+
+  #card1 {
+    margin-left: -5rem;
+}
+  #card2 {
+  margin-left: -5rem;
+}
+
+}
+@media screen and (max-width: 624px){
+
+  #setimg{
+    width: 24rem;
+    height: 19rem;
+  }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 250px;
+  }
+
+  #card1 {
+    margin-left: -5rem;
+}
+  #card2 {
+  margin-left: -5rem;
+}
+
+#png .setpng {
+  margin-left: -32rem;
+  margin-top: 25rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 9rem;
+  margin-top: -2rem;
+  position: absolute;
+  background-color: #FFDB6A;
+  /* padding-bottom: 2rem; */
+}
+
+}
+
+
+@media screen and (max-width: 600px){
+
+  #setimg {
+    width: 18rem;
+    height: 14rem;
+ }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 241px;
+  }
+
+
+  #card1 {
+    margin-left: -5rem;
+}
+  #card2 {
+  margin-left: -5rem;
+}
+
+#png .setpng {
+  margin-left: -32rem;
+  margin-top: 25rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 9rem;
+  margin-top: -2rem;
+  position: absolute;
+  background-color: #FFDB6A;
+  /* padding-bottom: 2rem; */
+}
+
+}
+
+@media screen and (max-width: 584px){
+
+  #setimg {
+    width: 18rem;
+    height: 14rem;
+  }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 200px;
+    height: 200px;
+  }
+
+  ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+  }
+  #card1 {
+    margin-left: -5rem;
+}
+  #card2 {
+  margin-left: -5rem;
+}
+
+#png .setpng {
+  margin-left: -24rem;
+  margin-top: 25rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 19rem;
+  margin-top: -2rem;
+  position: absolute;
+  background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 514px){
+
+  #setimg {
+    width: 19rem;
+    height: 14rem;
+  }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 170px;
+    height: 170px;
+  }
+
+  ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+  }
+  #card1 {
+    margin-left: -3rem;
+}
+  #card2 {
+  margin-left: -3rem;
+}
+
+#png .setpng {
+  margin-left: -24rem;
+  margin-top: 25rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 21rem;
+  margin-top: -2rem;
+  position: absolute;
+  background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 514px){
+
+  #setimg {
+    width: 19rem;
+    height: 14rem;
+  }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 170px;
+    height: 170px;
+  }
+
+  ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+  }
+  #card1 {
+    margin-left: -3rem;
+}
+  #card2 {
+  margin-left: -3rem;
+}
+
+#png .setpng {
+  margin-left: -26rem;
+  margin-top: 25rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 19rem;
+  margin-top: -2rem;
+  position: absolute;
+  background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 472px){
+
+  #setimg {
+    width: 17rem;
+    height: 14rem;
+  }
+ .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+  }
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img{
+    width: 170px;
+    height: 170px;
+  }
+
+  ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+  }
+  #card1 {
+    margin-left: -3rem;
+}
+  #card2 {
+  margin-left: -3rem;
+}
+
+#png .setpng {
+  margin-left: -26rem;
+  margin-top: 25rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 19rem;
+  margin-top: -2rem;
+  position: absolute;
+  background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 440px){
+
+  body{
+    background-image: linear-gradient(red,yellow);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-areas:
+        "img1 img1 img1 img1 "
+        "card1 card1 card2 card2";
+    grid-gap: 1rem;
+    padding: 10px;
+}
+.title h1 {
+  border: 2px solid;
+  background-color: #FFDB6A;
+  text-align: center;
+  margin-top: -3rem;
+}
+
+  #setimg {
+    width: 24rem;
+    height: 14rem;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+}
+  .setpic{
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .gallery img {
+    width: 9rem;
+    height: 11rem;
+}
+  ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+  }
+  #card1 {
+    margin-left: 0rem;
+    margin-right: 5rem;
+}
+  #card2 {
+    margin-left: -2rem;
+    margin-right: 0rem;
+}
+
+#png .setpng {
+  margin-left: -21rem;
+  margin-top: 22rem;
+}
+#png img {
+  width: 23rem;
+  height: 22rem;
+}
+#png {
+  display: flex;
+  background-color: white;
+  margin-top: 2rem;
+  margin-right: 0rem;
+  padding-bottom: 3rem;
+}
+
+#btn {
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 10rem;
+  margin-top: -3rem;
+  position: absolute;
+  background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 410px){
+
+.cards {
+  display: grid;
+  grid-template-areas:
+      "img1 img1 img1 img1 "
+      "card1 card1 card2 card2";
+  grid-gap: 1rem;
+  padding: 10px;
+}
+.title h1 {
+border: 2px solid;
+background-color: #FFDB6A;
+text-align: center;
+margin-top: -3rem;
+}
+
+#setimg {
+  width: 24rem;
+  height: 14rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3rem;
+}
+.setpic{
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.gallery img {
+  width: 8rem;
+  height: 8rem;
+}
+ul li a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+#card1 {
+  margin-left: 0rem;
+  margin-right: 5rem;
+}
+#card2 {
+  margin-left: -2rem;
+  margin-right: 0rem;
+}
+
+#png .setpng {
+margin-left: -21rem;
+margin-top: 22rem;
+}
+#png img {
+width: 23rem;
+height: 22rem;
+}
+#png {
+display: flex;
+background-color: white;
+margin-top: 2rem;
+margin-right: 0rem;
+padding-bottom: 3rem;
+}
+
+#btn {
+border: 2px solid;
+text-decoration: none;
+cursor: pointer;
+margin-left: 10rem;
+margin-top: -3rem;
+position: absolute;
+background-color: #FFDB6A;
+}
+
+}
+
+
+@media screen and (max-width: 400px){
+
+.cards {
+  display: grid;
+  grid-template-areas:
+      "img1 img1 img1 img1 "
+      "card1 card1 card2 card2";
+  grid-gap: 1rem;
+  padding: 10px;
+}
+.title h1 {
+border: 2px solid;
+background-color: #FFDB6A;
+text-align: center;
+margin-top: -3rem;
+}
+
+#setimg {
+  width: 24rem;
+  height: 14rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3rem;
+}
+.setpic{
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.gallery img {
+  width: 8rem;
+  height: 8rem;
+}
+ul li a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+#card1 {
+  margin-left: 0rem;
+  margin-right: 5rem;
+}
+#card2 {
+  margin-left: -2rem;
+  margin-right: 0rem;
+}
+
+#png .setpng {
+margin-left: -21rem;
+margin-top: 22rem;
+}
+#png img {
+width: 23rem;
+height: 22rem;
+}
+#png {
+display: flex;
+background-color: white;
+margin-top: 2rem;
+margin-right: -3rem;
+padding-bottom: 3rem;
+}
+
+#btn {
+border: 2px solid;
+text-decoration: none;
+cursor: pointer;
+margin-left: 10rem;
+margin-top: -3rem;
+position: absolute;
+background-color: #FFDB6A;
+}
+
+}
+@media screen and (max-width: 379px){
+
+.cards {
+  display: grid;
+  grid-template-areas:
+      "img1 img1 img1 img1 "
+      "card1 card1 card2 card2";
+  grid-gap: 1rem;
+  padding: 10px;
+}
+.title h1 {
+border: 2px solid;
+background-color: #FFDB6A;
+text-align: center;
+margin-top: -3rem;
+}
+
+#setimg {
+  width: 24rem;
+  height: 14rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+}
+.setpic{
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.gallery img {
+  width: 8rem;
+  height: 8rem;
+}
+ul li a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+#card1 {
+  margin-left: 0rem;
+  margin-right: 5rem;
+}
+#card2 {
+  margin-left: -2rem;
+  margin-right: 0rem;
+}
+
+#png .setpng {
+margin-left: -21rem;
+margin-top: 22rem;
+}
+#png img {
+width: 23rem;
+height: 22rem;
+}
+#png {
+display: flex;
+background-color: white;
+margin-top: 2rem;
+margin-right: -3rem;
+padding-bottom: 3rem;
+}
+
+#btn {
+border: 2px solid;
+text-decoration: none;
+cursor: pointer;
+margin-left: 10rem;
+margin-top: -3rem;
+position: absolute;
+background-color: #FFDB6A;
+}
+
+.icons {
+    display: grid;
+    grid-template-areas: "icon1 icon2 icon3 icon4";
+    grid-gap: 1rem;
+    margin-top: -1rem;
+}
+
+}
+
+@media screen and (max-width: 360px){
+
+.cards {
+  display: grid;
+  grid-template-areas:
+      "img1 img1 img1 img1 "
+      "card1 card1 card2 card2";
+  grid-gap: 1rem;
+  padding: 10px;
+}
+.title h1 {
+border: 2px solid;
+background-color: #FFDB6A;
+text-align: center;
+margin-top: -3rem;
+}
+
+#setimg {
+  width: 24rem;
+  height: 14rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+}
+.setpic{
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.gallery img {
+  width: 18rem;
+  height: 18rem;
+}
+ul li a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+#card1 {
+  margin-left: 0rem;
+  margin-right: 5rem;
+}
+#card2 {
+  margin-left: -2rem;
+  margin-right: 0rem;
+}
+
+#png .setpng {
+margin-left: -21rem;
+margin-top: 22rem;
+}
+#png img {
+width: 23rem;
+height: 22rem;
+}
+#png {
+display: flex;
+background-color: white;
+margin-top: 2rem;
+margin-right: -5rem;
+padding-bottom: 3rem;
+}
+
+#btn {
+border: 2px solid;
+text-decoration: none;
+cursor: pointer;
+margin-left: 10rem;
+margin-top: -3rem;
+position: absolute;
+background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 292px){
+
+.cards {
+  display: grid;
+  grid-template-areas:
+      "img1 img1 img1 img1 "
+      "card1 card1 card2 card2";
+  grid-gap: 1rem;
+  padding: 10px;
+}
+.title h1 {
+border: 2px solid;
+background-color: #FFDB6A;
+text-align: center;
+margin-top: -3rem;
+}
+
+#setimg {
+  width: 24rem;
+  height: 14rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+}
+.setpic{
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.gallery img {
+  width: 18rem;
+  height: 18rem;
+}
+ul li a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+#card1 {
+  margin-left: 0rem;
+  margin-right: 5rem;
+}
+#card2 {
+  margin-left: -2rem;
+  margin-right: 0rem;
+}
+
+#png .setpng {
+margin-left: -21rem;
+margin-top: 22rem;
+}
+#png img {
+width: 23rem;
+height: 22rem;
+}
+#png {
+display: flex;
+background-color: white;
+margin-top: 2rem;
+margin-right: -9rem;
+padding-bottom: 3rem;
+}
+
+#btn {
+border: 2px solid;
+text-decoration: none;
+cursor: pointer;
+margin-left: 10rem;
+margin-top: -3rem;
+position: absolute;
+background-color: #FFDB6A;
+}
+
+}
+
+@media screen and (max-width: 260px){
+
+.cards {
+  display: grid;
+  grid-template-areas:
+      "img1 img1 img1 img1 "
+      "card1 card1 card2 card2";
+  grid-gap: 1rem;
+  padding: 10px;
+}
+.title h1 {
+border: 2px solid;
+background-color: #FFDB6A;
+text-align: center;
+margin-top: -3rem;
+}
+
+#setimg {
+  width: 24rem;
+  height: 14rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+}
+.setpic{
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.gallery img {
+  width: 18rem;
+  height: 18rem;
+}
+ul li a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+#card1 {
+  margin-left: 0rem;
+  margin-right: 5rem;
+}
+#card2 {
+  margin-left: -2rem;
+  margin-right: 0rem;
+}
+
+#png .setpng {
+margin-left: -21rem;
+margin-top: 22rem;
+}
+#png img {
+width: 23rem;
+height: 22rem;
+}
+#png {
+display: flex;
+background-color: white;
+margin-top: 2rem;
+margin-right: -11rem;
+padding-bottom: 3rem;
+}
+
+#btn {
+border: 2px solid;
+text-decoration: none;
+cursor: pointer;
+margin-left: 10rem;
+margin-top: -3rem;
+position: absolute;
+background-color: #FFDB6A;
+}
+
+
+}
+
+
+
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-#ff4500">
+        <div class="container-fluid">
+          <a class="navbar-brand sett" href="#">Resturant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex m-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav flex m-auto  mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active  seta  " aria-current="page" href="#">CHICKEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active seta " aria-current="page" href="#">BEER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active seta " aria-current="page" href="#">WINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active seta " aria-current="page" href="#">DESSERT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active seta " aria-current="page" href="#">RESERVATION</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle iconset" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="material-icons iconset2 ">account_circle</i>Accounts
+                </a>
+                <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item " href="#"><i class="material-icons iconset ">touch_app</i>Log in</a></li>
+                  <li><a class="dropdown-item " href="#"><i class="material-icons iconset ">people_alt</i>Sign up</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="cards">
+        <div id="img1">
+          <img id="setimg" src="https://cdn.pixabay.com/photo/2017/11/10/15/04/steak-2936531__340.jpg" alt="image here" width="900px" height="400px">
+        </div>
+        <div class="pricebg" id="card1">
+          <h1>price</h1>
+        </div>
+        <div class="pricebg" id="card2">
+          <h1>price</h1>
+        </div>
+        <div class="title">
+          <h1>Title</h1>
+          <h2>subtitle</h2>
+        </div>
+      </div>
+    <div class="icons">
+      <div class="iconset" id="icon1">
+        <i class="material-icons seticon">paid</i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, at!</p>
+      </div>
+      <div class="iconset" id="icon2">
+       <i class="material-icons seticon"> local_bar</i>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, similique.</p>
+      </div>
+      <div class="iconset" id="icon3">
+        <i class="material-icons seticon">wine_bar</i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, molestiae.</p>
+      </div>
+      <div class="iconset" id="icon4">
+        <i class="material-icons seticon">restaurant_menu</i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, magnam.</p>
+      </div>
+    </div>
+    <div id="png">
+      <img src="https://www.freepnglogos.com/uploads/food-png/fast-food-transparent-png-pictures-icons-and-png-17.png" alt="image here" width="600px" height="400px"> 
+      <p class="setpng">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis nobis ipsum, natus at dolor?</p>
+      </div>
+      <button id="btn">Learn more</button>
+      <div class="instasec">
+        <h2><hr>INSTA GRAM<hr></h2>
+      </div>
+      <div class="gallery">
+        <div  class="setpic" id="pic1"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic2"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic3"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic4"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic5"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic6"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic7"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic8"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic9"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic10"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic7"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+        <div  class="setpic" id="pic7"><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="no" width="250px" height="250px"></div>
+      </div>
+  
+    </div>
+  <div id="line"></div>
+  <footer>
+    <div>
+      <h1>footer here</h1>
+      <ul>Lorem, ipsum dolor.</ul>
+      <ul>Lorem, ipsum dolor.</ul>
+      <ul>Lorem, ipsum dolor.</ul>
+      <ul>Lorem, ipsum dolor.</ul>
+    </div>
+  </footer>
+</body>
+</html>
